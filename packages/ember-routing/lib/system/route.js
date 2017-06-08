@@ -1126,7 +1126,9 @@ let Route = EmberObject.extend(ActionHandler, Evented, {
     @method intermediateTransitionTo
     @param {String} name the name of the route
     @param {...Object} models the model(s) to be used while transitioning
-    to the route.
+      to the route.
+    @param {Object} [options] optional hash with a queryParams property
+      containing a mapping of query parameters
     @since 1.2.0
     @public
    */
